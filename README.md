@@ -5,6 +5,10 @@ Simple Bookmarklet to Obsidian
 
 - [Turndown](https://github.com/mixmark-io/turndown)
 
+## Referencies
+
+- https://css-tricks.com/a-complete-guide-to-bookmarklets
+
 ## Screenshots
 
 ### How to add the bookmarklet
