@@ -1,19 +1,33 @@
-# bookmarklet-to-obsidian
-Simple Bookmarklet to Obsidian
+# chancli-bookmarklets
 
-## Dependencies
+A collection of browser bookmarklets for reading and saving web content.
 
-- [Turndown](https://github.com/mixmark-io/turndown)
+---
+
+## Bookmarklets
+
+### clean-page
+
+Opens the current page in a new window stripped of scripts and clutter, showing only the main content (`article`, `main`, or `body`) with a minimal dark-themed reading layout. All links open in a new tab, and an "Original source" link is appended at the bottom.
+
+**No dependencies** — uses only browser-native APIs (`fetch`, `DOMParser`).
+
+---
+
+### save-to-obsidian
+
+Converts the current page to Markdown and opens it directly in Obsidian via the `obsidian://new` URI scheme. Generates a note with YAML frontmatter (`title`, `source`, `date`, `tags: [clippings]`).
+
+If you have text selected before clicking the bookmarklet, it is prepended as a blockquote before the full page content.
+
+**Dependency:** [Turndown](https://github.com/mixmark-io/turndown) — loaded at runtime from `unpkg.com`.
+
+---
+
+## How to install
+
+Minify the bookmarklet you want (use the `.min.js` file), then create a new bookmark in your browser and paste the minified code as the URL.
 
 ## References
 
 - https://css-tricks.com/a-complete-guide-to-bookmarklets
-
-## Screenshots
-
-### How to add the bookmarklet
-<img width="619" height="562" alt="add-page" src="https://github.com/user-attachments/assets/eeecf93c-ddcf-4a52-8bba-4d06dca14810" />
-
-### Article saved
-<img width="842" height="405" alt="obsidian-saved" src="https://github.com/user-attachments/assets/5f2fd7d0-9c4f-4e3f-94e0-0d4377b1685a" />
-
